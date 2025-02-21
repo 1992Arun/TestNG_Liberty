@@ -92,7 +92,7 @@ public class TestRunner extends BaseClas {
 		
 		sendKeys(s.getLastName(), u.getProperty("LastName"));
 	
-		sa.assertEquals(getAttribute(s.getLastName(), "value"), "Arun");
+		sa.assertEquals(getAttribute(s.getLastName(), "value"), u.getProperty("LastName"));
 		
 		sendKeys(s.getProviderID(), u.getProperty("TaxId"));
 		
