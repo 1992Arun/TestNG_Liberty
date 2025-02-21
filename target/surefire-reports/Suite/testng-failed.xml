@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="org.uitlity.Listene"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Test(failed)">
+    <parameter name="last" value="fra"/>
+    <parameter name="first" value="kevin"/>
+    <classes>
+      <class name="org.test.TestRunner">
+        <methods>
+          <include name="tearDown"/>
+          <include name="search1" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- org.test.TestRunner -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
